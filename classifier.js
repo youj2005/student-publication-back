@@ -4,8 +4,6 @@ import { pipeline, env } from '@xenova/transformers';
 env.localModelPath = './models/';
 
 // Disable the loading of remote models from the Hugging Face Hub:
-env.allowRemoteModels = false;
-
 
 class TopicClassificationPipeline {
   static task = 'zero-shot-classification';
